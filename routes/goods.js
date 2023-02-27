@@ -186,7 +186,7 @@ router.post("/edit", (req, res) => {
 /* 添加商品分类 */
 router.post("/addcate", (req, res) => {
   let { cateName, state } = req.body;
-  if (!cateName || ![1, 0].includes(state)) {
+  if (!cateName || ![1, 0,"0","1"].includes(state)) {
     res.send({ code: 5001, msg: "参数错误!" });
     return;
   }

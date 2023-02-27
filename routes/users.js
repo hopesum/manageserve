@@ -104,7 +104,8 @@ router.get("/role", (req, res) => {
   let role;
   if (req.user.userGroup === "超级管理员") {
     role = "super";
-  } else {
+  } 
+  if (req.user.userGroup === "普通管理员"){
     role = "normal";
   }
   res.send({ role });

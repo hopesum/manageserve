@@ -2,7 +2,7 @@
   "name": "sell-serve",
   "version": "0.0.0",
   "private": true,
-"license": "ISC",
+  "license": "ISC",
   "scripts": {
     "start": "nodemon app"
   },
